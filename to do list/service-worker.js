@@ -1,4 +1,4 @@
-const CACHE_NAME = 'todo-list-v2';
+const CACHE_NAME = 'todo-list-v4';
 const FILES_TO_CACHE = [
   './',
   './index.html',
@@ -35,6 +35,6 @@ self.addEventListener('fetch', (event) => {
         caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
         return response;
       })
-      .catch(() => caches.match(event.request).then((cached) => cached || caches.match('./index.html')))
+      .catch(() => caches.match(event.request).then((cached) => cached || caches.match('./')))
   );
 });

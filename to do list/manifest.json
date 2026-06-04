@@ -1,9 +1,9 @@
 {
   "short_name": "TDList",
   "name": "To Do List",
-  "id": "index.html",
-  "start_url": "index.html",
-  "scope": ".",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#00FFFF",
   "theme_color": "#8A2BE2",
